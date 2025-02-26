@@ -13,38 +13,39 @@
     .image-container {
       position: relative;
       width: 100%;
-      height: 300vh; /* Responsive height based on viewport */
-      max-height: 800px; /* Max height to maintain proportionality on larger screens */
-      overflow: hidden; /* Hide overflow to ensure clean view */
+      height: 100vh; 
+      overflow: hidden; 
+      margin-top: 0; 
     }
-
+  
     /* Image Styling */
     .image-container img {
       position: absolute;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Ensure the image covers the container fully */
+      object-fit: fill; /* Ensure the image completely fills the container */
       opacity: 0;
       transition: opacity 1s ease-in-out;
     }
-
+  
     .image-container img.active {
       opacity: 1;
     }
-
+  
     /* Media Queries for responsiveness */
     @media (max-width: 768px) {
       .image-container {
         height: 50vh; /* Reduce height on medium-sized screens */
       }
     }
-
+  
     @media (max-width: 480px) {
       .image-container {
         height: 50vh; /* Further reduce height for small screens */
       }
     }
 
+    
   </style>
 </head>
 <body>
@@ -61,27 +62,27 @@
       <a href="#">E-content (download)</a>
       <a href="faculty.html">Faculty</a>
       <a href="#">Fees</a>
-      <a href="#">Login/signup</a>
+      <a href="login.html">Login/signup</a>
     </nav>
   </header>
 
   <br><br>
 
-  <main>
-    <!-- Image Slider Section -->
-    <section>
-      <div class="image-container">
-          <img src="school.jpg" alt="Image 1" class="active">
-          <img src="classroom.jpg" alt="Image 2">
-          <img src="classroom1.jpg" alt="Image 3">
-          <img src="computerlab.png" alt="Image 4">
-          <img src="classroom2.jpg" alt="Image 5">
-          <img src="fun.jpg" alt="Image 6">
-          <img src="group.jpg" alt="Image 7">
-          <img src="team.jpg" alt="Image 8">
-      </div>
-    </section>
-  </main>
+  <!-- Image Slider Section -->
+  <section>
+    <div class="image-container">
+        <img src="school.jpg" alt="Image 1" class="active">
+        <img src="classroom.jpg" alt="Image 2">
+        <img src="classroom1.jpg" alt="Image 3">
+        <img src="computerlab.jpg" alt="Image 4">
+        <img src="classroom2.jpg" alt="Image 5">
+        <img src="fun.jpg" alt="Image 6">
+        <img src="group.jpg" alt="Image 7">
+        <img src="team.jpg" alt="Image 8">
+    </div>
+  </section>
+
+  
 
   <!-- About Section -->
   <section class="about-section">
@@ -102,7 +103,7 @@
         <h2>Our Mission</h2>
         <p>Welcome to our SRMMS school. We offer a variety of courses to help you achieve your educational goals. Welcome to a learning revolution! Our digital school is designed to provide an all-in-one educational experience for every student.</p>
         <p>Essential Studies: Core subjects like Math, Science, Literature, and History taught by expert educators, ensuring a strong foundational knowledge.</p>
-        <p>Coding Classes: Dive into the world of programming with coding courses designed to teach practical skills in various programming languages, like Python ,HTML,CSS,C,C++ JavaScript.</p>
+        <p>Coding Classes: Dive into the world of programming with coding courses designed to teach practical skills in various programming languages, like Python, HTML, CSS, C, C++, JavaScript.</p>
         <p>Computer Basics: Learn the essentials of computer literacy, including software applications, internet navigation, and basic troubleshooting.</p>
         <p>Live and Recorded Classes: Access live classes to interact with instructors in real-time, plus recorded sessions to review at your convenience.</p>
         <p>Extra Doubt Classes: Dedicated sessions to address any questions and ensure clarity on all topics.</p>
@@ -111,11 +112,36 @@
       </div>
     </div>
   </section>
+  <div class="gap"></div>
+    <div class="photo">
+        <div class="aa"></div>
+        <div class="bb"></div>
+        <div class="cc"></div>
+        <div class="dd"></div>
+        
+    </div>
+    <div class="photos">
+        <div class="aaa">
+           <p> Modern Teaching</p>
+            <p>Methods</p>
+        </div>
+        <div class="bbb">
+            <p>Wide Range of</p>
+            <p>Activities</p>
+        </div>
+        <div class="ccc">
+            <p>Empowering Student</p>
+             <p>Life</p>
+        </div>
+        <div class="ddd">
+            <p>Strong Academic</p>
+            <p>System</p></div>
+        
+    </div>
 
   <!-- Footer Section -->
   <footer>
     <p>&copy; 2025 SRMM CBSE SCHOOL. All rights reserved.</p>
-    <!-- Social Media Icons -->
     <div class="social-media">
       <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
