@@ -1,47 +1,68 @@
-/* Basic Styles */
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: url(school.jpg) no-repeat center center fixed; /* Background image fixed */
-    background-size: cover; /* Ensure image covers the full screen */
-    height: 100%; /* Full height for the page */
-    display: flex;
-    flex-direction: column; /* Aligning content in a column */
-    justify-content: space-between; /* Ensures content stays on top and footer stays at the bottom */
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
 header {
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for header */
+    background-color: rgba(51, 51, 51, 0.8);
     color: white;
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 1.5rem; /* Relative sizing */
     font-weight: bold;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #D44c4c;
 }
 
-/* Faculty Cards Section */
+
+/* Faculty Section */
 .main-content {
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+h3 {
+    color: #555;
+}
+
+/* Faculty Cards Grid */
+.faculty-container {
     padding: 20px;
     background-color: rgba(244, 244, 244, 0.9); /* Semi-transparent background for content */
     min-height: 400px;
@@ -55,7 +76,7 @@ nav a:hover {
     margin-top: 20px;
 }
 
-/* Card Styles */
+/* Faculty Card */
 .card {
     /* background-color: white; */
     border-radius: 10px;
@@ -115,96 +136,123 @@ nav a:hover {
     display: block;
 }
 
-/* Footer Section */
+
+/* Footer */
 footer {
-    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background for footer */
+    background: #222;
     color: white;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-/* Social Media Icons */
-.social-media {
+    padding: 40px 0;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #fff;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #e67e22;
+  }
+  
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 15px; /* Space between icons */
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular icons */
+    background-color: rgba(255, 255, 255, 0.2); /* Light transparent background */
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background-color: #e67e22; /* Change background on hover */
+    color: white;
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 10px; /* Reduce space between icons for smaller screens */
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    width: 100%;
+    background: #111;
+    padding: 15px 0;
+    font-size: 14px;
     margin-top: 20px;
 }
 
-.social-icon {
-    font-size: 24px;
-    color: rgb(246, 241, 241);
-    text-decoration: none;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .faculty-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+    }
 }
 
-.social-icon:hover {
-    color: white;
-    /* Color change on hover */
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    header {
+    .faculty-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
+    }
+
+    .footer-container {
         flex-direction: column;
         text-align: center;
     }
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .main-content {
-        padding: 15px;
-        grid-template-columns: 1fr; /* Stack cards in one column on mobile */
-    }
-
-    footer {
-        padding: 15px;
-    }
-}
-
-@media (max-width: 1024px) {
-    nav {
-        gap: 15px;
-    }
-
-    header .logo {
-        font-size: 20px;
-    }
-
-    .main-content {
-        grid-template-columns: repeat(2, 1fr); /* Two cards per row on tablets */
-    }
-}
-
-@media (min-width: 1025px) {
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav {
-        gap: 20px;
-    }
-
-    header .logo {
-        font-size: 24px;
-    }
-
-    .main-content {
-        padding: 30px;
-        grid-template-columns: repeat(3, 1fr); /* Three cards per row on larger devices */
+    .footer-section {
+        margin: 10px 0;
     }
 }
