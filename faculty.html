@@ -5,27 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty</title>
     <link rel="stylesheet" href="faculty.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome CDN for social media icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <h2 id="logo">SRMM CBSE SCHOOL</h2>
+        <div class="logo">SRMM CBSE SCHOOL</div>
         <nav>
             <a href="index.html">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">Courses</a>
+            <a href="#">Student portal</a>
+            <a href="#">Exam</a>
+            <a href="#">E-content (download)</a>
             <a href="faculty.html">Faculty</a>
-            <a href="/Course">Course</a>
-            <a href="/LiveClass">LiveClass</a>
-            <a href="/ERP">ERP</a>
+            <a href="#">Fees</a>
+            <a href="login.html">Login/signup</a>
         </nav>
     </header>
 
     <!-- Faculty Cards Section -->
-    <div class="main-content">
-     <h1 style="font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Teacher's Details</h1>
-     <h3>Meet our dedicated team of teachers who are committed to providing quality education.</h3>
-     <br>
+<!-- Faculty Cards Section -->
+<div class="main-content">
+    <h1 style="font-style: italic;">Teacher's Details</h1>
+    <h3>Meet our dedicated team of teachers who are committed to providing quality education.</h3>
+    
+    <div class="faculty-container">
         <!-- Faculty Cards -->
         <div class="card">
             <img src="er.Aditya.jpg" alt="Aditya Kumar">
@@ -42,10 +52,10 @@
         </div>
 
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher2.jpg" alt="Naina Singh">
             <div class="desc">
                 <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <p>Frontend Developer</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
                     <p><strong>Specialization:</strong> Frontend Development</p>
@@ -56,116 +66,152 @@
         </div>
 
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher3.jpg" alt="Ravi Sharma">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Ravi Sharma</h3>
+                <p>Data Analyst</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Data Science</p>
+                    <p><strong>Experience:</strong> 4 Years</p>
+                    <p><strong>Skills:</strong> Python, SQL, Machine Learning</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher4.jpg" alt="Priya Kapoor">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Priya Kapoor</h3>
+                <p>Mathematics Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Algebra & Calculus</p>
+                    <p><strong>Experience:</strong> 6 Years</p>
+                    <p><strong>Skills:</strong> Teaching, Problem-Solving, Logical Reasoning</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher5.jpg" alt="Rahul Verma">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Rahul Verma</h3>
+                <p>Physics Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Mechanics & Thermodynamics</p>
+                    <p><strong>Experience:</strong> 7 Years</p>
+                    <p><strong>Skills:</strong> Physics, Experimental Labs, Research</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher6.jpg" alt="Sneha Das">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Sneha Das</h3>
+                <p>English Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Literature & Grammar</p>
+                    <p><strong>Experience:</strong> 8 Years</p>
+                    <p><strong>Skills:</strong> Writing, Poetry, Public Speaking</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher7.jpg" alt="Amit Sharma">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Amit Sharma</h3>
+                <p>Computer Science Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Programming & AI</p>
+                    <p><strong>Experience:</strong> 10 Years</p>
+                    <p><strong>Skills:</strong> C++, Python, Machine Learning</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher8.jpg" alt="Pooja Iyer">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Pooja Iyer</h3>
+                <p>Biology Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Human Anatomy</p>
+                    <p><strong>Experience:</strong> 9 Years</p>
+                    <p><strong>Skills:</strong> Research, Medical Studies, Genetics</p>
                 </div>
             </div>
         </div>
+
         <div class="card">
-            <img src="er.Aditya.jpg" alt="Naina Singh">
+            <img src="teacher9.jpg" alt="Manoj Tiwari">
             <div class="desc">
-                <h3>Naina Singh</h3>
-                <p>Software Engineer</p>
+                <h3>Manoj Tiwari</h3>
+                <p>Chemistry Teacher</p>
                 <button class="more-info">More Info</button>
                 <div class="teacher-details">
-                    <p><strong>Specialization:</strong> Frontend Development</p>
-                    <p><strong>Experience:</strong> 3 Years</p>
-                    <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+                    <p><strong>Specialization:</strong> Organic Chemistry</p>
+                    <p><strong>Experience:</strong> 11 Years</p>
+                    <p><strong>Skills:</strong> Lab Research, Chemical Reactions</p>
                 </div>
             </div>
         </div>
-    
+    </div>
+</div>
+
+
         <!-- Repeat similar card structure for more faculty members as needed -->
 
     </div>
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 SRMM CBSE SCHOOL. All rights reserved.</p>
-        <div class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms">Terms & Conditions</a>
-            <a href="/contact">Contact Us</a>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>SRMM CBSE School</h3>
+                <p>Nurturing minds, building futures, and creating tomorrow's leaders through quality education.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section programs">
+                <h3>Programs</h3>
+                <ul>
+                    <li><a href="#">Primary Education</a></li>
+                    <li><a href="#">Secondary Education</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Arts & Culture</a></li>
+                    <li><a href="#">Sports Programs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Areraj Yogiyar Education, Learning City</p>
+                <p><i class="fas fa-envelope"></i> info@srmmschool.edu</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
         </div>
-         <!-- Social Media Icons -->
-    <div class="social-media">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-        <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-      </div>
+        <div class="footer-bottom">
+            &copy; 2025 SRMM CBSE SCHOOL. All rights reserved.
+        </div>
     </footer>
 
     <script>
