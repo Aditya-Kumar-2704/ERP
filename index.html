@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css">
   <!-- Font Awesome CDN for social media icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
   <style>
     /* Image Container */
@@ -31,6 +34,60 @@
     .image-container img.active {
       opacity: 1;
     }
+    .topper-students {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .students-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.student-card {
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+  border-radius: 15px;
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.student-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.student-info img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.details {
+  text-align: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+.details p {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
   
     /* Media Queries for responsiveness */
     @media (max-width: 768px) {
@@ -54,6 +111,7 @@
   <header>
     <div class="logo">SRMM CBSE SCHOOL</div>
     <nav>
+      
       <a href="#">Home</a>
       <a href="#">Dashboard</a>
       <a href="#">Courses</a>
@@ -65,8 +123,8 @@
       <a href="login.html">Login/signup</a>
     </nav>
   </header>
-
   <br><br>
+
 
   <!-- Image Slider Section -->
   <section>
@@ -83,35 +141,90 @@
   </section>
 
   
-
-  <!-- About Section -->
+  
   <section class="about-section">
-    <div class="about-content">
-      <img src="school.jpg" alt="About Our School" class="about-image">
-      <div class="about-text">
-        <h2>About SRMMS CBSE School</h2>
-        <p>SRMMS CBSE School is committed to providing quality education to students, fostering an environment of growth and learning. Our dedicated faculty and state-of-the-art facilities ensure that students receive the best education possible. Located in the heart of the city, our school offers a wide range of courses and extracurricular activities to help students develop their skills and interests.</p>
-      </div>
+    <p style="color: darkgreen;text-align: center; font-weight: 400; font-size: 32px;">DISCOVER</p>
+  <h1 style="text-align: center; font-size: 64px;">About Our School</h1>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="school.jpg" alt="SRMM CBSE School Campus">
+            <div class="years-badge">1<br>Years</div>
+        </div>
+        <div class="about-content">
+            <h2>SRMM CBSE School</h2>
+            <p>
+                SRMM CBSE School is committed to providing quality education to students, fostering an environment of growth and learning. 
+                Our dedicated faculty and state-of-the-art facilities ensure that students receive the best education possible.
+            </p>
+            <p>
+                Located in the heart of the city, our school offers a wide range of courses and extracurricular activities to help students 
+                develop their skills and interests. We believe in holistic development, where academic excellence goes hand-in-hand 
+                with character building and life skills.
+            </p>
+            
+            <div class="about-features">
+                <div class="feature">
+                    <i class="fas fa-user-tie"></i>
+                    <div>
+                        <h4>Expert Faculty</h4>
+                        <p>Experienced teachers</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-school"></i>
+                    <div>
+                        <h4>Modern Campus</h4>
+                        <p>State-of-the-art facilities</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h4>Safe Environment</h4>
+                        <p>Security and care</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-globe"></i>
+                    <div>
+                        <h4>Global Perspective</h4>
+                        <p>International standards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <!-- Mission Section -->
-  <section class="mission-section">
-    <div class="mission-content">
-      <img src="mission.png" alt="Our Mission" class="mission-image">
-      <div class="mission-text">
-        <h2>Our Mission</h2>
-        <p>Welcome to our SRMMS school. We offer a variety of courses to help you achieve your educational goals. Welcome to a learning revolution! Our digital school is designed to provide an all-in-one educational experience for every student.</p>
-        <p>Essential Studies: Core subjects like Math, Science, Literature, and History taught by expert educators, ensuring a strong foundational knowledge.</p>
-        <p>Coding Classes: Dive into the world of programming with coding courses designed to teach practical skills in various programming languages, like Python, HTML, CSS, C, C++, JavaScript.</p>
-        <p>Computer Basics: Learn the essentials of computer literacy, including software applications, internet navigation, and basic troubleshooting.</p>
-        <p>Live and Recorded Classes: Access live classes to interact with instructors in real-time, plus recorded sessions to review at your convenience.</p>
-        <p>Extra Doubt Classes: Dedicated sessions to address any questions and ensure clarity on all topics.</p>
-        <p>Practical Learning: Hands-on projects and activities that enhance practical knowledge, preparing students for real-world applications.</p>
-        <p>No need for additional tuitions or institutions; our platform offers everything you need to excel and achieve your future goals. Let's redefine learning, shall we?</p>
-      </div>
+<!-- Mission section -->
+
+<section class="mission">
+  <h4>OUR PURPOSE</h4>
+  <h2>Our Mission</h2>
+  <h3>Empowering Students for the Future</h3>
+  <p>Welcome to SRMMS school. We offer a variety of courses to help you achieve your educational goals. Welcome to a learning revolution! Our digital school is designed to provide an all-in-one educational experience for every student.</p>
+
+  <div class="mission-details">
+    <div class="mission-item">
+      <h4>Essential Studies</h4>
+      <p>Core subjects like Math, Science, Literature, and History taught by expert educators, ensuring a strong foundational knowledge.</p>
     </div>
-  </section>
+    <div class="mission-item">
+      <h4>Coding Classes</h4>
+      <p>Dive into the world of programming with coding courses designed to teach practical skills in various programming languages, like Python, HTML, CSS, C++, JavaScript.</p>
+    </div>
+    <div class="mission-item">
+      <h4>Practical Learning</h4>
+      <p>Hands-on projects and activities that enhance practical knowledge, preparing students for real-world applications.</p>
+    </div>
+  </div>
+
+  <blockquote>
+    "Education is not the filling of a pail, but the lighting of a fire."  
+    <span>- William Butler Yeats</span>
+  </blockquote>
+</section>
+
   <div class="gap"></div>
     <div class="photo">
         <div class="aa"></div>
@@ -137,34 +250,149 @@
             <p>Strong Academic</p>
             <p>System</p></div>
         
-    </div>
+            <section class="topper-students">
+              <h2>Our Selected Students</h2>
+              <div class="students-container">
+                
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student1.jpg" alt="Kartik Agarwal">
+                    <div class="details">
+                      <p><strong>Name:</strong> Kartik Agarwal</p>
+                      <p><strong>Roll No:</strong> 101</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.5</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student2.jpg" alt="Rojal Sapkota">
+                    <div class="details">
+                      <p><strong>Name:</strong> Rojal Sapkota</p>
+                      <p><strong>Roll No:</strong> 102</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.4</p>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student3.jpg" alt="Priya Sharma">
+                    <div class="details">
+                      <p><strong>Name:</strong> Priya Sharma</p>
+                      <p><strong>Roll No:</strong> 103</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.3</p>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student3.jpg" alt="Priya Sharma">
+                    <div class="details">
+                      <p><strong>Name:</strong> Priya Sharma</p>
+                      <p><strong>Roll No:</strong> 103</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.3</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student3.jpg" alt="Priya Sharma">
+                    <div class="details">
+                      <p><strong>Name:</strong> Priya Sharma</p>
+                      <p><strong>Roll No:</strong> 103</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.3</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="student-card">
+                  <div class="student-info">
+                    <img src="student3.jpg" alt="Priya Sharma">
+                    <div class="details">
+                      <p><strong>Name:</strong> Priya Sharma</p>
+                      <p><strong>Roll No:</strong> 103</p>
+                      <p><strong>Passing Year:</strong> 2025</p>
+                      <p><strong>CGPA:</strong> 9.3</p>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </section>
+            
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 SRMM CBSE SCHOOL. All rights reserved.</p>
-    <div class="social-media">
-      <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
-      <a href="https://www.twitter.com" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-      <a href="https://github.com" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h3>SRMM CBSE School</h3>
+            <p>Nurturing minds, building futures, and creating tomorrow's leaders through quality education.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+  
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+  
+        <div class="footer-section programs">
+            <h3>Programs</h3>
+            <ul>
+                <li><a href="#">Primary Education</a></li>
+                <li><a href="#">Secondary Education</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Arts & Culture</a></li>
+                <li><a href="#">Sports Programs</a></li>
+            </ul>
+        </div>
+  
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Areraj Yogiyar Education, Learning City</p>
+            <p><i class="fas fa-envelope"></i> info@srmmschool.edu</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        </div>
+    </div>
+  
+    <div class="footer-bottom">
+        &copy; 2025 SRMM CBSE SCHOOL. All rights reserved.
     </div>
   </footer>
-
+  
   <script>
-    // JavaScript to change images every 2 seconds
+    
     let currentIndex = 0;
     const images = document.querySelectorAll('.image-container img');
     
     setInterval(() => {
-      // Remove 'active' class from the current image
-      images[currentIndex].classList.remove('active');
       
-      // Move to the next image, loop back to 0 if we're at the end
+      images[currentIndex].classList.remove('active');
+
       currentIndex = (currentIndex + 1) % images.length;
       
-      // Add 'active' class to the next image
+     
       images[currentIndex].classList.add('active');
-    }, 2000); // Change image every 2 seconds (2000 ms)
+    }, 2000); 
+
+    
   </script>
 
 </body>
