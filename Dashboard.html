@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .sidebar {
+        height: 100vh;
+        width: 250px;
+        background-color: rgba(51, 51, 51, 0.7);
+        position: fixed;
+        right: 0;
+        padding-top: 20px;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.7);
+        
+    }
+    main{
+      background-color: #f8f9fa;
+    }
+    .content {
+        margin-left: 260px;
+        padding: 20px; 
+        justify-content: space-around;
+    }
+</style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">SRMM CBSE SCHOOL</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login/signup</a>
+      <a href="Dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Dashboard Container -->
+  <div class="sidebar p-3">
+    <h4 class="text-center">Dashboard</h4>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a href="#" class="nav-link">Assignments</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Homework</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Subjects</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Exam Schedule</a></li>
+    </ul>
+</div>
+<main>
+<div class="content">
+    <h2>Assignments</h2>
+    <table class="table table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th>S.no</th>
+                <th>Title</th>
+                <th>Subject</th>
+                <th>Due Date</th>
+                <th>Assignment</th>
+                <th>Status</th>
+                <th>Total Marks</th>
+                <th>Obtained Marks</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>History and Development of X-Rays</td>
+                <td>PF</td>
+                <td>07-Jul-2023</td>
+                <td><button class="btn btn-sm btn-info">View</button> <button class="btn btn-sm btn-success">Download</button></td>
+                <td>Out of time</td>
+                <td>15</td>
+                <td>N/A</td>
+                <td><button class="btn btn-danger">Out of time</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Classify transactions based on their nature</td>
+                <td>CA</td>
+                <td>05-Jul-2023</td>
+                <td><button class="btn btn-sm btn-info">View</button> <button class="btn btn-sm btn-success">Download</button></td>
+                <td>Out of time</td>
+                <td>12</td>
+                <td>N/A</td>
+                <td><button class="btn btn-danger">Out of time</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Boolean Algebra and Logic Gates</td>
+                <td>DLD</td>
+                <td>12-Jul-2023</td>
+                <td><button class="btn btn-sm btn-info">View</button> <button class="btn btn-sm btn-success">Download</button></td>
+                <td>Pending</td>
+                <td>20</td>
+                <td>N/A</td>
+                <td><button class="btn btn-success">Submit</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</main>
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section about">
+        <h3>SRMM CBSE School</h3>
+        <p>Nurturing minds, building futures, and creating tomorrow's leaders through quality education.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Mission</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section programs">
+        <h3>Programs</h3>
+        <ul>
+          <li><a href="#">Primary Education</a></li>
+          <li><a href="#">Secondary Education</a></li>
+          <li><a href="#">Computer Science</a></li>
+          <li><a href="#">Arts & Culture</a></li>
+          <li><a href="#">Sports Programs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Areraj Yogiyar Education, Learning City</p>
+        <p><i class="fas fa-envelope"></i> info@srmmschool.edu</p>
+        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 SRMM CBSE SCHOOL. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

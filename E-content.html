@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Content Platform</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0b1120;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #131a2b;
+            color: #f8f9fa;
+        }
+        .navbar a {
+            color: #fff;
+
+        }
+
+        .main-content {
+            text-align: left;
+            padding: 50px 0;
+        }
+
+        .e-content-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            color: black;
+        }
+
+        .assignment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            margin-top: 10px;
+        }
+
+        .features-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+            color: black;
+            text-align: center;
+        }
+
+        .feature-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background:#131a2b;
+            color: white;
+            padding: 40px 0;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            width: 90%;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e67e22;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            text-decoration: none;
+            color: #bbb;
+            transition: 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #e67e22;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #e67e22;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            width: 100%;
+            background:#131a2b;
+            padding: 15px 0;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SRMM CBSE SCHOOL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Notices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exam.html">Exam</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Time Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">E-Content</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Library</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-content">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h5 class="text-primary">Educational Resources</h5>
+                <h1>Access Your Learning Materials Anytime, Anywhere</h1>
+                <p>Comprehensive e-content platform with assignments, notes, video lectures, and more.</p>
+                <a href="#" class="btn btn-primary">Browse E-Content</a>
+            </div>
+            <div class="col-md-6">
+                <div class="e-content-card shadow">
+                    <h5>E-Content Platform</h5>
+                    <p><b>Your All E-content and material are here ,to boost your learning experience</b></p>
+                    <div class="assignment">
+                        <span><i class="fas fa-file-alt"></i> Assignment 1</span>
+
+                    </div>
+                    <div class="assignment">
+                        <span><i class="fas fa-file-alt"></i> Assignment 2</span>
+
+                    </div>
+                    <div class="assignment">
+                        <span><i class="fas fa-file-alt"></i> Assignment 3</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container features-section">
+        <h2>Comprehensive E-Content Features</h2>
+        <p>Everything you need to enhance your learning experience in one platform</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>📄 Digital Assignments</h5>
+                    <p>Access and submit assignments online</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>📚 E-books & Notes</h5>
+                    <p>Comprehensive study materials</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>🎥 Video Lectures</h5>
+                    <p>Visual learning experience</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>❓ Question Banks</h5>
+                    <p>Practice with previous questions</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>📝 Lecture Notes & PPTs</h5>
+                    <p>Access presentation materials</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <h5>⬇️ Easy Downloads</h5>
+                    <p>Save content for offline access</p>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-4">Explore All E-Content</button>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>SRMM CBSE School</h3>
+                <p>Nurturing minds, building futures, and creating tomorrow's leaders through quality education.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section programs">
+                <h3>Programs</h3>
+                <ul>
+                    <li><a href="#">Primary Education</a></li>
+                    <li><a href="#">Secondary Education</a></li>
+                    <li><a href="#">Computer Science</a></li>
+                    <li><a href="#">Arts & Culture</a></li>
+                    <li><a href="#">Sports Programs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Areraj Yogiyar Education, Learning City</p>
+                <p><i class="fas fa-envelope"></i> info@srmmschool.edu</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 SRMM CBSE SCHOOL. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
